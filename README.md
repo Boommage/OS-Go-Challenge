@@ -5,9 +5,9 @@ Greetings Everyone! This repo contains a personal challenge where I reimplement 
 All of the original assignments for the class are written in C due to course requirements. This project exists alongside that work and focuses on translating those C based implementations into idiomatic Go while preserving the underlying operating system concepts.
 
 The primary goals of this challenge are:
-*To deepen my understanding of operating system fundamentals
-*To become more proficient in Go
-*To explore how the same low level ideas translate between C and Go
+* To deepen my understanding of operating system fundamentals
+* To become more proficient in Go
+* To explore how the same low level ideas translate between C and Go
 
 These implementations are not intended to replace or be submitted as coursework. They are personal learning exercises and may differ from the original assignments in structure or approach.
 
