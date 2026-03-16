@@ -1,6 +1,6 @@
 # hfgrep
 
-In this directory, you should write the program `hfgrep.c` or `hfgrep.cpp` and compile it into the binary `hfgrep` (e.g., `gcc -o hfgrep hfgrep.c -Wall -Werror`)(e.g., `g++ -o hfgrep hfgrep.cpp -Wall -Werror`).
+In this directory, you should write a program and compile it into the binary `hfgrep`.
 
 After doing so, you can run the tests from this directory by running the `test-hfgrep.sh` script. If all goes well, you will see:
 
