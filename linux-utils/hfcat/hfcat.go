@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"os"
-	"bufio"
 	"log"
 )
 
@@ -24,11 +22,27 @@ func main() {
 
 		//read every line in the file and print to screen - not this currently has an error
 		//file sizes too big throw an error for Scanner - look up why later
-		scanner := bufio.NewScanner(file)
-		for scanner.Scan() {
-			fmt.Println(scanner.Text())
+		//scanner := bufio.NewScanner(file)
+		//for scanner.Scan() {
+		//	fmt.Println(scanner.Text())
+		//}
+		//err = scanner.Err()
+		//errc(err)
+
+		//buf := make([]byte, 256)
+
+		//for {
+		//	n, err := file.Read(buf)
+		//	errc(err)
+		//	if n == 0 {
+		//		break
+		//	}
+		//	fmt.Println(string(buf[:n]))
+		//}
+
+		buf := make([]byte, 4096)
+		for n, err := file.Read(buf); err == nil; n, err = file.Read(buf) {
+			os.Stdout.Write(buf[:n]) 
 		}
-		err = scanner.Err()
-		errc(err)
-	} 
+	}
 }
