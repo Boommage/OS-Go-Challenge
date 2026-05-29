@@ -31,8 +31,8 @@ func main() {
 	argNum := len(os.Args)
 	//if no args are passed
 	if argNum < 2 {
-			fmt.Println("hfgrep: searchterm [file ...]")
-			os.Exit(1)
+		fmt.Println("hfgrep: searchterm [file ...]")
+		os.Exit(1)
 	}
 
 	term := os.Args[1]
